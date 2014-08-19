@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OpenSeadragon Test Page</title>
+    <script type="text/javascript" src='/webjars/openseadragon/1.1.1/openseadragon.js'></script>
+    <style type="text/css">
+
+      #openseadragonTitle {
+        text-align: center;
+        padding-bottom: 15px;
+      }
+
+      .openseadragonDiv {
+        width: 800px;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .openseadragon-container {
+        background-color: black !important;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="openseadragonTitle">
+        A simple demo page to show a default OpenSeadragon viewer using WebJars.
+    </div>
+    <div id="contentDiv" class="openseadragonDiv"></div>
+    <script type="text/javascript">
+
+        var viewer = OpenSeadragon({
+            // debugMode: true,
+            id: "contentDiv",
+            prefixUrl: "/webjars/openseadragon/1.1.1/images/",
+            tileSources: "testpattern.dzi",
+            showNavigator: true
+        });
+
+    </script>
+  </body>
+</html>
