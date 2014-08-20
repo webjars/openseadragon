@@ -21,7 +21,7 @@ public class BuildTest {
      * @throws Exception If the test fails as a result of an exception
      */
     @Test
-    public void testHelloWorld() throws Exception {
+    public void testBuild() throws Exception {
         final Verifier verifier = getVerifier("sanity-test");
 
         verifier.displayStreamBuffers();

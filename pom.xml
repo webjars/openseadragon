@@ -77,7 +77,7 @@
       <version>1.5</version>
       <scope>test</scope>
     </dependency>
-    <!-- The following are here so I can edit the HelloWorldTest in Eclipse -->
+    <!-- The following are here so I can edit SanityIT in Eclipse -->
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
