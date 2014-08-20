@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -12,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>openseadragon</artifactId>
-    <version>1.1.1-SNAPSHOT</version>
+    <version>1.1.1</version>
     <name>WebJar-OpenSeadragon</name>
     <description>WebJar for OpenSeadragon</description>
     <url>http://webjars.org</url>
@@ -61,7 +60,8 @@
         <url>http://github.com/webjars/openseadragon</url>
         <connection>scm:git:https://github.com/webjars/openseadragon.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/openseadragon.git</developerConnection>
-    </scm>
+      <tag>openseadragon-1.1.1</tag>
+  </scm>
 
     <dependencies>
         <!-- Only dependencies listed here are those used for testing -->
@@ -205,11 +205,11 @@
                         </goals>
                         <configuration>
                             <target>
-                                <echo message="Unzipping upstream archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="Moving upstream resources"/>
+                                <echo message="Unzipping upstream archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="Moving upstream resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/openseadragon-bin-${upstream.version}"/>
+                                    <fileset dir="${project.build.directory}/openseadragon-bin-${upstream.version}" />
                                 </move>
                             </target>
                         </configuration>
