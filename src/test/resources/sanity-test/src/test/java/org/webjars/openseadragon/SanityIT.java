@@ -87,9 +87,8 @@ public class SanityIT {
                 LOGGER.debug("Openseadragon console message: " + message);
             }
         } catch (final WebDriverException details) {
-            // If we fail to find an error message, that means the image was loaded successfully
-            if (LOGGER.isInfoEnabled()) {
-                LOGGER.info("Successfully loaded image tiles on page load");
+            if (LOGGER.isDebugEnabled()) {
+                LOGGER.debug("Did not find an Openseadragon error message on page load");
             }
         }
 
