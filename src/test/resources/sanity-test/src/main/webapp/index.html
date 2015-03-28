@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>OpenSeadragon Test Page</title>
-    <script type="text/javascript" src='/webjars/openseadragon/1.1.1/openseadragon.js'></script>
+    <script type="text/javascript" src='/webjars/openseadragon/${upstream.version}/openseadragon.js'></script>
     <style type="text/css">
 
       #openseadragonTitle {
@@ -33,7 +33,7 @@
         var viewer = OpenSeadragon({
             // debugMode: true,
             id: "contentDiv",
-            prefixUrl: "/webjars/openseadragon/1.1.1/images/",
+            prefixUrl: "/webjars/openseadragon/${upstream.version}/images/",
             tileSources: "testpattern.dzi",
             showNavigator: true
         });
