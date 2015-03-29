@@ -205,11 +205,11 @@
                         </goals>
                         <configuration>
                             <target>
-                                <echo message="Unzipping upstream archive" />
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
-                                <echo message="Moving upstream resources" />
+                                <echo message="Unzipping upstream archive"/>
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
+                                <echo message="Moving upstream resources"/>
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/openseadragon-bin-${upstream.version}" />
+                                    <fileset dir="${project.build.directory}/openseadragon-bin-${upstream.version}"/>
                                 </move>
                             </target>
                         </configuration>
@@ -220,13 +220,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.5</version>
+                <version>2.5.1</version>
             </plugin>
             <!-- For staging artifacts of this project -->
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.5.1</version>
+                <version>1.6.5</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>sonatype-nexus-staging</serverId>
