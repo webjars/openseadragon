@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>openseadragon</artifactId>
-    <version>2.1.0</version>
+    <version>2.1.1-SNAPSHOT</version>
     <name>WebJar-OpenSeadragon</name>
     <description>WebJar for OpenSeadragon</description>
     <url>http://webjars.org</url>
@@ -60,7 +60,7 @@
         <url>http://github.com/webjars/openseadragon</url>
         <connection>scm:git:https://github.com/webjars/openseadragon.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/openseadragon.git</developerConnection>
-      <tag>openseadragon-2.1.0</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <dependencies>
